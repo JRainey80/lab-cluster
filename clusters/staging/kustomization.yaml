@@ -4,3 +4,4 @@ resources:
   - flux-system
   - traefik
   - apps.yaml
+  - monitoring.yaml
