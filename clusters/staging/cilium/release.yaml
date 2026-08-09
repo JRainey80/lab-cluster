@@ -26,3 +26,8 @@ spec:
     operator:
       replicas: 2
     routingMode: tunnel
+    12announcements:
+      enabled: true
+    k8sClientRateLimit:
+      qps: 10
+      burst: 20
