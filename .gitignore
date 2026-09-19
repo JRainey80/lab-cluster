@@ -1,3 +1,4 @@
 age.agekey
 pem.json
 credentials.json
+*.key

@@ -30,7 +30,10 @@ spec:
           kind: PrometheusRule
   values:
     grafana:
-      adminPassword: Dontforget69!!
+      admin:
+        existingSecret: grafana-admin-secret
+        userKey: admin-user
+        passwordKey: admin-password
       ingress:
         ## If true, Grafana Ingress will be created
         ##
@@ -50,8 +53,8 @@ spec:
         # TLS configuration for grafana Ingress
         ## Secret must be manually created in the namespace
         ##
-        tls: []
-        # - secretName: grafana-general-tls
-          #   hosts:
-        #   - grafana.example.com
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - grs.rainey-cloud.com
   
