@@ -39,7 +39,7 @@ spec:
         ## IngressClassName for Grafana Ingress.
         ## Should be provided if Ingress is enable.
         ##
-        ingressClassName: traefik
+        ingressClassName: kube-system-traefik
 
         ## Hostnames.
         ## Must be provided if Ingress is enable.
