@@ -5,12 +5,12 @@ metadata:
   namespace: monitoring
 spec:
   interval: 30m
+  timeout: 15m
   chart:
     spec:
       chart: kube-prometheus-stack
       version: "88.x"
 
-      # version: "58.x"
 
       sourceRef:
         kind: HelmRepository
